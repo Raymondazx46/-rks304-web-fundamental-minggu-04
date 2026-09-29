@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | TokoKita Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['"Plus Jakarta Sans"','sans-serif']}}}}</script>
+</head>
+<body class="flex min-h-screen items-center justify-center bg-teal-950 p-4 font-sans">
+  <form action="dashboard.html" class="w-full max-w-sm rounded-2xl bg-white p-8 shadow-xl">
+    <h1 class="text-2xl font-bold text-teal-950">TokoKita<span class="text-amber-500">.</span></h1>
+    <p class="mt-1 text-sm text-slate-500">Masuk untuk mengelola toko.</p>
+    <div class="mt-6">
+      <label for="username" class="mb-1 block text-sm font-medium">Username</label>
+      <input id="username" type="text" required class="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-200">
+    </div>
+    <div class="mt-4">
+      <label for="password" class="mb-1 block text-sm font-medium">Password</label>
+      <input id="password" type="password" required class="w-full rounded-lg border border-stone-300 px-3 py-2 text-sm focus:border-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-200">
+    </div>
+    <button type="submit" class="mt-6 w-full rounded-lg bg-teal-800 py-2.5 text-sm font-semibold text-white hover:bg-teal-700">Login</button>
+  </form>
+</body>
+</html>
